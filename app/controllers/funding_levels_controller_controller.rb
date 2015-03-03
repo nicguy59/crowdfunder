@@ -1,0 +1,2 @@
+class FundingLevelsControllerController < ApplicationController
+end
