@@ -1,0 +1,13 @@
+<h1>Current Project: <%= @project.name %></h1>
+
+<%= simple_format(@project.description) %>
+
+<hr>
+
+<h2>Funding Levels</h2>
+
+<% @project.funding_levels.each do |funding_level| %>
+
+  <h4><% funding_level.reward_name %> --- <% funding_level.amount %></h4>
+
+  <h3>Pledges for <%= funding_level.reward_name %></h3>
